@@ -11,7 +11,7 @@
         "e2e": "ng e2e",
         "electron": "ng build && electron .",
         "electron-build": "ng build --prod && electron .",
-        "electron-win": "npm run electron-build && electron-packager . --platform=win32 --overwrite --asar --no-prune --ignore=/node_modules --ignore=/e2e",
+        "electron-win": "npm run electron-build && electron-packager . --platform=win32 --overwrite --out=release-builds --icon=assets/icons/win/icon.ico --asar --no-prune --ignore=/node_modules --ignore=/e2e",
         "electron-mac": "electron-packager . --platform=darwin",
         "electron-linux": "electron-packager . --platform=linux"
     },
