@@ -53,3 +53,8 @@ git push origin master
 
 git tag -a v0.0.1 -m "version 1" 
 git push --tags
+
+
+# en el archivo angular.json es donde se pone todas las librerias externas que se van a utilizar
+# la libreria que mas dependencias tiene va al final
+

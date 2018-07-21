@@ -11,7 +11,7 @@
         "e2e": "ng e2e",
         "electron": "ng build && electron .",
         "electron-build": "ng build --prod && electron .",
-        "electron-win": "npm run electron-build && electron-packager . --platform=win32 --overwrite --out=release-builds --icon=assets/icons/win/icon.ico --asar --no-prune --ignore=/node_modules --ignore=/e2e",
+        "electron-win": "npm run electron-build && electron-packager . --platform=win32 --overwrite --out=release-builds --asar --no-prune --ignore=/node_modules --ignore=/e2e",
         "electron-mac": "electron-packager . --platform=darwin",
         "electron-linux": "electron-packager . --platform=linux"
     },
@@ -26,7 +26,10 @@
         "@angular/platform-browser": "^6.0.3",
         "@angular/platform-browser-dynamic": "^6.0.3",
         "@angular/router": "^6.0.3",
+        "bootstrap": "^4.1.2",
         "core-js": "^2.5.4",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.3",
         "rxjs": "^6.0.0",
         "zone.js": "^0.8.26"
     },
@@ -41,7 +44,6 @@
         "@types/node": "~8.9.4",
         "codelyzer": "~4.2.1",
         "electron": "^2.0.5",
-        "electron-builder": "^20.24.4",
         "electron-packager": "^12.1.0",
         "jasmine-core": "~2.99.1",
         "jasmine-spec-reporter": "~4.2.1",
